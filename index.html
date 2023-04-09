@@ -1,0 +1,133 @@
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<nav id="navbar">
+  <header>Calculation Block</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="#Constants">Constants</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Variables">Variables</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Operators">Operators</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Arithmetic_Expressions">Arithmetic Expressions</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Control_Statements">Control Statements</a>
+    </li>
+  </ul>
+
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+      <p>Constants in general-purpose arithmetic expressions are character strings which represent values themselves. Three kinds of constants can be used, as follows:</p>
+      
+      <li>Integer constant (10, 20, etc.)</li>
+      <li>Floating-point constant (1.5, 100.0, 1.5E10, etc)</li>
+      <li>Character string constant ("ABC", "character string", etc.)</li>
+      
+      
+    </article>
+    
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <article>
+      <p>A variable is a data which has a name and data type. A value can be referred to and set by a variable.</p>
+      <p>There are two kinds of variables: I/O variable and local variables.</p>
+    </article>
+      <code>program
+        #define OPEN 2
+        .....
+        SI0100.MV=OPEN
+        SI0200.MV=OPEN
+        end
+      </code>
+  </section>
+  <section class="main-section" id="Operators">
+    <header>Operators</header>
+    <article>
+      <p>The following operators can be used in the general-purpose arithmetic expressions:</p>
+      <li>Binomial operator</li>
+      <li>Unary arithmetic operator</li>
+      <li>Relational operator</li>
+      <li>Equality operator</li>
+      <li>Binary logical operator</li>
+      <li>Unary logical operator</li>
+      <li>Bitwise logical operator</li>
+      <li>Bitwise shift operator</li>
+    </article>
+    
+    
+    
+  </section>
+  <section class="main-section" id="Arithmetic_Expressions">
+    <header>Arithmetic Expressions</header>
+    <article>
+      <p>An arithmetic expression refers to a statment which satisfies one of the following conditions:</p>
+      <li>It is a function, constant, or variable.</li>
+      <li>It is a statement which connects functions, constants and variables by an operator.</li>
+      <li>It is a statement which connects arithmetic expressions by an operator.</li>
+    </article> 
+  </section>
+  <section class="main-section" id="Control_Statements">
+    <header>Control Statements</header>
+    <article>
+      <p>The control statement is a statement for controlling the execution order of arithmetic expressions. There are four kinds of control statements for testing conditions and selections as follows:</p>
+      <li>if statement</li>
+      <p>Condition testing</p>
+      <li>switch statement</li>
+      <p>Multiple-branches processing</p>
+      <li>goto statement</li>
+      <p>Unconditional jump</p>
+      <p>However, jump cannot be specified if the execution of the arithmetic expression goes backwards.</p>
+      <li>exit statement</li>
+      <p>Jumps to the "end"statement unconditionally.</p>
+
+      <h2>if statement</h2>
+      <code>if ("statement")then
+        ....
+        [else
+        ...
+        ]
+        ....
+        end if </code>
+
+        <code>if ("expression")then
+        ....
+        else if ("expression")then
+        ...
+        [else
+        ....
+
+        ....
+        end if 
+        ....</code>
+      <h2>switch statement</h2>
+      <code>switch ("expression")
+        case "constant"[,"constant"]...:
+        ....
+        [case "constant"[,"constant"...]:
+        ....
+        [oterwise:
+        ....
+        ]]
+        end switch
+      </code>
+      <h2>goto statement</h2>
+      <p>The "goto"statement unconditionally jumps to the line with the specified label.</p>
+      <p>The "goto" statement, however, cannot specify a label before the "goto" statement itself.</p>
+      <code>goto "label"</code>
+      <p>A compiler error will occur if the label specified by the "goto" statement is located prior to the "goto" statement, or if the  specified label does not exist in the arithmetic expression.</p>
+      <h2>exit statement</h2>
+      <p>The "exit" statement unconditionally jumps to the "end" statement. The "exit" statement can be placed anywhere in the arithmetic expression.</p> 
+    </article>
+  </section>
+</main>
